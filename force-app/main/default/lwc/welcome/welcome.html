@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Nested Private Object Porperty">
+        <div class="slds-p-left_small">
+            <div>
+                <p>{hello.greeting}</p>
+                <p>{hello.welcome}</p>
+            </div>
+            <div>
+                <lightning-button variant="brand" label="Change Text" title="Change Default Text"
+                    icon-name="standard:announcement" onclick={clickHandler}
+                    class="slds-m-left_x-small"></lightning-button>
+
+            </div>
+            <div>
+                <template for:each={myTasks} for:item="task">
+                    <h1 key={task}>{task}</h1>
+                </template>
+            </div>
+            <div><lightning-button label="Add Task" variant="brand" onclick={addTaskHandler}></lightning-button></div>
+            <div class="slds-p-top_medium">
+                <lightning-button label="Refresh Data" variant="brand" onclick={refreshHandler}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

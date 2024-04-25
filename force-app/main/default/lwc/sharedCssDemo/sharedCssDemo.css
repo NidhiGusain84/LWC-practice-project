@@ -1,0 +1,11 @@
+@import "c/cssLibrary";
+
+.bgclass{
+    background-color: var(--c-custombackground);
+}
+
+.btnbg{
+    --slds-c-button-brand-color-background : rgb(204, 225, 111);
+    --slds-c-button-brand-color-background-active : rgb(0, 255, 140);
+    --slds-c-button-brand-color-background-hover : rgb(255, 0, 0);
+}
